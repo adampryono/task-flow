@@ -10,20 +10,12 @@
 <div align="center">
   <h1>🚀 TaskFlow - Modern Task Management Application</h1>
   <p>A beautiful, responsive task management application built with Vue.js 3 and Node.js</p>
-  
-  <a href="#features">Features</a>
-  ·
-  <a href="#installation">Installation</a>
-  ·
-  <a href="#deployment">Deployment</a>
 </div>
 
 <br />
 
 <div align="center">
   <img src="https://img.shields.io/badge/Status-Active-success?style=flat-square" alt="Status" />
-  <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License" />
-  <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen?style=flat-square" alt="PRs Welcome" />
 </div>
 
 ---
@@ -34,26 +26,19 @@
   <table>
     <tr>
       <td align="center">
-        <img src="https://via.placeholder.com/400x300/4F46E5/FFFFFF?text=Login+Page" alt="Login Page" width="400" />
+        <img src=".github/assets/login.png" alt="Login Page" width="400" />
         <br />
         <sub><b>Login Page</b></sub>
       </td>
       <td align="center">
-        <img src="https://via.placeholder.com/400x300/4F46E5/FFFFFF?text=Dashboard" alt="Dashboard" width="400" />
+        <img src=".github/assets/dashboard.png" alt="Dashboard" width="400" />
         <br />
         <sub><b>Dashboard</b></sub>
       </td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="https://via.placeholder.com/400x300/4F46E5/FFFFFF?text=Task+Management" alt="Task Management" width="400" />
+         <td align="center">
+        <img src=".github/assets/taskmanagement.png" alt="Task Management" width="400" />
         <br />
         <sub><b>Task Management</b></sub>
-      </td>
-      <td align="center">
-        <img src="https://via.placeholder.com/400x300/4F46E5/FFFFFF?text=Dark+Mode" alt="Dark Mode" width="400" />
-        <br />
-        <sub><b>Dark Mode</b></sub>
       </td>
     </tr>
   </table>
