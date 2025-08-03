@@ -1,148 +1,372 @@
-# Task Manager Application
+<div align="center">
+  <img src="https://img.shields.io/badge/Vue.js-3-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" alt="Vue.js" />
+  <img src="https://img.shields.io/badge/Node.js-18-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/TailwindCSS-3.0-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="TailwindCSS" />
+</div>
 
-A simple task management web application built with Vue.js 3 and Node.js.
+<br />
 
-## Features
+<div align="center">
+  <h1>🚀 TaskFlow - Modern Task Management Application</h1>
+  <p>A beautiful, responsive task management application built with Vue.js 3 and Node.js</p>
+  
+  <a href="#features">Features</a>
+  ·
+  <a href="#installation">Installation</a>
+  ·
+  <a href="#deployment">Deployment</a>
+</div>
 
-- User Authentication (Login & Register)
-- JWT-based authentication
-- Create, Read, Update, Delete tasks
-- Filter tasks by status (Todo, In Progress, Done)
-- Search tasks by title
-- Responsive design with Tailwind CSS
+<br />
 
-## Tech Stack
+<div align="center">
+  <img src="https://img.shields.io/badge/Status-Active-success?style=flat-square" alt="Status" />
+  <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License" />
+  <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen?style=flat-square" alt="PRs Welcome" />
+</div>
 
-- **Frontend**: Vue.js 3 (Composition API), Vite, Tailwind CSS
-- **Backend**: Node.js, Express.js
-- **Database**: MySQL with Sequelize ORM
+---
+
+## 📸 Screenshots
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://via.placeholder.com/400x300/4F46E5/FFFFFF?text=Login+Page" alt="Login Page" width="400" />
+        <br />
+        <sub><b>Login Page</b></sub>
+      </td>
+      <td align="center">
+        <img src="https://via.placeholder.com/400x300/4F46E5/FFFFFF?text=Dashboard" alt="Dashboard" width="400" />
+        <br />
+        <sub><b>Dashboard</b></sub>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://via.placeholder.com/400x300/4F46E5/FFFFFF?text=Task+Management" alt="Task Management" width="400" />
+        <br />
+        <sub><b>Task Management</b></sub>
+      </td>
+      <td align="center">
+        <img src="https://via.placeholder.com/400x300/4F46E5/FFFFFF?text=Dark+Mode" alt="Dark Mode" width="400" />
+        <br />
+        <sub><b>Dark Mode</b></sub>
+      </td>
+    </tr>
+  </table>
+</div>
+
+## ✨ Features
+
+<table>
+  <tr>
+    <td valign="top" width="50%">
+      
+### 🔐 Authentication & Security
+- ✅ User Registration & Login
+- ✅ JWT-based Authentication
+- ✅ Secure Password Hashing
+- ✅ Protected Routes
+- ✅ Auto Logout on Token Expiry
+      
+### 📝 Task Management
+- ✅ Create, Read, Update, Delete Tasks
+- ✅ Task Status Management (Todo, In Progress, Done)
+- ✅ Task Priority Levels
+- ✅ Due Date Tracking
+- ✅ Progress Tracking
+- ✅ Task Tags & Categories
+      
+    </td>
+    <td valign="top" width="50%">
+      
+### 🎨 User Interface
+- ✅ Modern & Clean Design
+- ✅ Dark Mode Support
+- ✅ Fully Responsive
+- ✅ Smooth Animations
+- ✅ Toast Notifications
+- ✅ Grid & List Views
+      
+### 🔍 Advanced Features
+- ✅ Real-time Search
+- ✅ Status Filtering
+- ✅ Sort by Date/Priority
+- ✅ Task Statistics
+- ✅ User Profile Management
+      
+    </td>
+  </tr>
+</table>
+
+## 🛠️ Tech Stack
+
+<table>
+  <tr>
+    <td align="center" width="100">
+      <img src="https://skillicons.dev/icons?i=vue" width="50" height="50" alt="Vue.js" />
+      <br />Vue.js 3
+    </td>
+    <td align="center" width="100">
+      <img src="https://skillicons.dev/icons?i=nodejs" width="50" height="50" alt="Node.js" />
+      <br />Node.js
+    </td>
+    <td align="center" width="100">
+      <img src="https://skillicons.dev/icons?i=express" width="50" height="50" alt="Express" />
+      <br />Express
+    </td>
+    <td align="center" width="100">
+      <img src="https://skillicons.dev/icons?i=mysql" width="50" height="50" alt="MySQL" />
+      <br />MySQL
+    </td>
+    <td align="center" width="100">
+      <img src="https://skillicons.dev/icons?i=tailwind" width="50" height="50" alt="TailwindCSS" />
+      <br />Tailwind
+    </td>
+    <td align="center" width="100">
+      <img src="https://skillicons.dev/icons?i=vite" width="50" height="50" alt="Vite" />
+      <br />Vite
+    </td>
+  </tr>
+</table>
+
+### Frontend
+- **Framework**: Vue.js 3 (Composition API)
+- **Build Tool**: Vite
+- **Styling**: TailwindCSS
+- **HTTP Client**: Axios
+- **Routing**: Vue Router
+- **State Management**: Vue Composables
+- **Notifications**: Vue Toastification
+- **Date Handling**: date-fns
+
+### Backend
+- **Runtime**: Node.js
+- **Framework**: Express.js
+- **Database**: MySQL
+- **ORM**: Sequelize
 - **Authentication**: JWT
+- **Validation**: Express Validator
+- **Security**: Bcrypt, CORS, Helmet
 
-## Prerequisites
+## 📋 Prerequisites
 
-- Node.js (v14 or higher)
-- MySQL Server
-- npm or yarn
+Before you begin, ensure you have the following installed:
 
-## Installation
+- **Node.js** (v18.0.0 or higher) - [Download](https://nodejs.org/)
+- **MySQL** (v8.0 or higher) - [Download](https://www.mysql.com/downloads/)
+- **Git** - [Download](https://git-scm.com/)
+- **npm** or **yarn** package manager
 
-1. Clone the repository
+## 🚀 Installation
 
-2. Install root dependencies:
-   ```bash
-   npm install
-   ```
+### 1️⃣ Clone the Repository
 
-3. Install backend dependencies:
-   ```bash
-   cd backend
-   npm install
-   cd ..
-   ```
+```bash
+git clone https://github.com/yourusername/task-manager.git
+cd task-manager
+```
 
-4. Install frontend dependencies:
-   ```bash
-   cd frontend
-   npm install
-   cd ..
-   ```
+### 2️⃣ Install Dependencies
 
-   Or use the all-in-one command (after fixing package.json):
-   ```bash
-   npm run install:all
-   ```
+```bash
+# Install root dependencies
+npm install
 
-5. Set up MySQL database and create a database named `task_manager`
+# Install all dependencies (frontend & backend)
+npm run install:all
+```
 
-6. Create `.env` file in the backend folder (see Environment Variables section)
+### 3️⃣ Database Setup
 
-7. Run database migrations:
-   ```bash
-   cd backend
-   npx sequelize-cli db:migrate
-   ```
+1. Create MySQL database:
+```sql
+CREATE DATABASE task_manager;
+```
 
-8. Start development servers:
-   ```bash
-   npm run dev
-   ```
+2. Configure environment variables:
+```bash
+# Copy example env file
+cp backend/.env.example backend/.env
+```
 
-The frontend will be available at `http://localhost:3000` and the backend at `http://localhost:5000`.
-
-## Environment Variables
-
-Create a `.env` file in the backend folder with:
-
+3. Update `.env` with your database credentials:
 ```env
+# Database Configuration
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=yourpassword
 DB_NAME=task_manager
 DB_PORT=3306
+
+# Server Configuration
 PORT=5000
+NODE_ENV=development
+
+# JWT Configuration
 JWT_SECRET=your-super-secret-jwt-key
 JWT_EXPIRE=7d
-NODE_ENV=development
+
+# Frontend URL (for CORS)
+FRONTEND_URL=http://localhost:3000
 ```
 
-## API Endpoints
-
-- `POST /api/auth/register` - Register new user
-- `POST /api/auth/login` - Login user
-- `GET /api/tasks` - Get all tasks (authenticated)
-- `POST /api/tasks` - Create new task (authenticated)
-- `PUT /api/tasks/:id` - Update task (authenticated)
-- `DELETE /api/tasks/:id` - Delete task (authenticated)
-
-## Project Structure
-
-```
-task-manager/
-├── backend/
-│   ├── src/
-│   │   ├── config/
-│   │   ├── controllers/
-│   │   ├── middleware/
-│   │   ├── models/
-│   │   ├── routes/
-│   │   └── server.js
-│   ├── .env
-│   └── package.json
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── composables/
-│   │   ├── router/
-│   │   ├── views/
-│   │   ├── App.vue
-│   │   ├── main.js
-│   │   └── style.css
-│   ├── index.html
-│   └── package.json
-├── package.json
-└── README.md
+4. Run database migrations:
+```bash
+cd backend
+npx sequelize-cli db:migrate
+cd ..
 ```
 
-## Troubleshooting
+### 4️⃣ Start Development Servers
 
-### Database Connection Issues
-- Ensure MySQL is running
-- Check database credentials in `.env` file
-- Make sure the database `task_manager` exists
+```bash
+# Start both frontend and backend
+npm run dev
 
-### Installation Issues
-- Clear npm cache: `npm cache clean --force`
-- Delete `node_modules` folders and `package-lock.json` files, then reinstall
+# Or start separately
+npm run dev:backend  # Backend on http://localhost:5000
+npm run dev:frontend # Frontend on http://localhost:3000
+```
 
-## Deployment
+## 🏗️ Project Structure
 
-- Backend: Deploy to Railway, Render, or Heroku
-- Frontend: Deploy to Netlify or Vercel
+```
+📦 task-manager/
+├── 📂 backend/
+│   ├── 📂 config/         # Database configuration
+│   ├── 📂 migrations/     # Database migrations
+│   ├── 📂 seeders/        # Database seeders
+│   ├── 📂 src/
+│   │   ├── 📂 config/     # App configuration
+│   │   ├── 📂 controllers/# Route controllers
+│   │   ├── 📂 middleware/ # Express middleware
+│   │   ├── 📂 models/     # Sequelize models
+│   │   ├── 📂 routes/     # API routes
+│   │   └── 📄 server.js   # Entry point
+│   ├── 📄 .env            # Environment variables
+│   └── 📄 package.json
+├── 📂 frontend/
+│   ├── 📂 public/         # Static assets
+│   ├── 📂 src/
+│   │   ├── 📂 components/ # Vue components
+│   │   ├── 📂 composables/# Vue composables
+│   │   ├── 📂 config/     # App configuration
+│   │   ├── 📂 router/     # Vue Router
+│   │   ├── 📂 views/      # Page components
+│   │   ├── 📄 App.vue     # Root component
+│   │   ├── 📄 main.js     # Entry point
+│   │   └── 📄 style.css   # Global styles
+│   ├── 📄 index.html
+│   └── 📄 package.json
+├── 📄 package.json        # Root package.json
+└── 📄 README.md
+```
 
-## Future Enhancements
+## 📡 API Documentation
 
-- Drag and drop task reordering
-- Task categories/labels
-- Due date reminders
-- Task sharing between users
-- Dark mode support
+### Authentication Endpoints
+
+| Method | Endpoint | Description | Auth Required |
+|--------|----------|-------------|---------------|
+| POST | `/api/auth/register` | Register new user | ❌ |
+| POST | `/api/auth/login` | Login user | ❌ |
+
+### Task Endpoints
+
+| Method | Endpoint | Description | Auth Required |
+|--------|----------|-------------|---------------|
+| GET | `/api/tasks` | Get all user tasks | ✅ |
+| GET | `/api/tasks/:id` | Get single task | ✅ |
+| POST | `/api/tasks` | Create new task | ✅ |
+| PUT | `/api/tasks/:id` | Update task | ✅ |
+| DELETE | `/api/tasks/:id` | Delete task | ✅ |
+
+### Request/Response Examples
+
+<details>
+<summary><b>POST /api/auth/register</b></summary>
+
+**Request:**
+```json
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "password123"
+}
+```
+
+**Response:**
+```json
+{
+  "success": true,
+  "token": "eyJhbGciOiJIUzI1NiIs...",
+  "user": {
+    "id": 1,
+    "name": "John Doe",
+    "email": "john@example.com"
+  }
+}
+```
+</details>
+
+<details>
+<summary><b>POST /api/tasks</b></summary>
+
+**Request:**
+```json
+{
+  "title": "Complete project documentation",
+  "description": "Write comprehensive docs",
+  "status": "Todo",
+  "priority": "High",
+  "dueDate": "2025-08-10",
+  "tags": ["documentation", "urgent"]
+}
+```
+
+**Response:**
+```json
+{
+  "success": true,
+  "task": {
+    "id": 1,
+    "title": "Complete project documentation",
+    "description": "Write comprehensive docs",
+    "status": "Todo",
+    "priority": "High",
+    "dueDate": "2025-08-10T00:00:00.000Z",
+    "tags": ["documentation", "urgent"],
+    "userId": 1,
+    "createdAt": "2025-08-03T10:00:00.000Z",
+    "updatedAt": "2025-08-03T10:00:00.000Z"
+  }
+}
+```
+</details>
+
+
+## 🧪 Testing
+
+```bash
+# Run frontend tests
+cd frontend
+npm run test
+
+# Run backend tests
+cd backend
+npm run test
+```
+
+
+
+## 🙏 Acknowledgments
+
+- [Vue.js Documentation](https://vuejs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Express.js](https://expressjs.com/)
+- [Sequelize ORM](https://sequelize.org/)
+
